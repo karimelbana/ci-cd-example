@@ -18,7 +18,8 @@ def root():
     response = {
         'greeting': 'Servus, griaß di!',    # This is a typical Bavarian greeting ;)
         'timestamp': datetime.now(),
-        'how are you?': 'I am fine, thank you! How are you?'
+        'how are you?': 'I am fine, thank you! How are you?',
+        'what time is it?': 'It is ' + datetime.now().strftime('%H:%M:%S') + ' o\'clock.'
     }
 
     return response
